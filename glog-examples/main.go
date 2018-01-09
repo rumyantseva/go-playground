@@ -14,7 +14,10 @@ var (
 // glog.Fatal vs glog.Exit
 func main() {
 	flag.Parse()
+	myfunc()
+}
 
+func myfunc() {
 	defer func() {
 		fmt.Println("Yeah! I was deferred.")
 	}()
